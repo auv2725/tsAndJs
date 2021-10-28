@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>123</title>
+    <script type="text/javascript">
+      document.write("script标签里的代码\n")
+      console.log("script标签的",document)
+    </script>
+    <!-- 引入外部js文件 -->
+    <script type="text/javascript" src="main.js">
+      // document.write("外部文件引入完毕\n");//标签src属性定义后，标签体不会运行
+    </script>
+    
+    <body>
+      <button onclick="document.write('按钮点击\n');console.log('button的',document)">按钮</button>
+      <a href="javascript:alert('点击超链接\n');">超链接</a>
+    </body>
+  </head>
+</html>
