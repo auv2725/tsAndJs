@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" charset="UTF-8">
     <title>123</title>
     <script type="text/javascript">
-      document.write("script标签里的代码\n")
-      console.log("script标签的",document)
+      document.write("script标签里的代码\n 123")
+      console.log("script标签的",document) 
     </script>
     <!-- 引入外部js文件 -->
     <script type="text/javascript" src="main.js">
@@ -13,7 +13,8 @@
     </script>
     
     <body>
-      <button onclick="document.write('按钮点击\n');console.log('button的',document)">按钮</button>
+      <button onclick="alert('按钮点击\n');console.log('button的',document);hide(this,true)">按钮</button>
+      <button onclick="hightLight(this),debug('hide button 1')">Hide button 1</button>
       <a href="javascript:alert('点击超链接\n');">超链接</a>
     </body>
   </head>
