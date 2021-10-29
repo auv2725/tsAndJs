@@ -5,5 +5,9 @@ console.log("外部文件的\n", document)
 //数字中：Infinity表示无穷大，超过最大阿表示范围
 //浮点数的运算会失去精确性，因为二进制
 var a;
+a = 10;
 console.log('a的类型是：', typeof a);
-console.log(Number.MIN_VALUE)
+a = '字符串';
+console.log('a的类型是：', typeof a);
+a = true;
+console.log('a的类型是：',typeof a);
