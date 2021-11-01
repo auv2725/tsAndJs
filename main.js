@@ -36,7 +36,7 @@ function moveon() {
   //同弹出一个问讯对话框
   var answer = confirm("准备好了吗？");
 
-  if (answer) window.location = 'http://www.baidu.com';  
+  if (answer) window.location = 'http://www.baidu.com';
 }
 
 //定时启动一个方法
@@ -46,7 +46,7 @@ function debug(msg) {
   var log = document.getElementById('debuglog');
 
   //如果节点不存在，则创建该节点
-  if(!log) {
+  if (!log) {
     log = document.createElement('div');//创建一个div元素
     log.id = 'debuglog';//给该元素的id赋值为debuglog
     log.innerHTML = '<h1>Debug Log</h1>';//定义该元素的初始内容
@@ -61,7 +61,7 @@ function debug(msg) {
 }
 
 function hide(e, refolow) {
-  if(refolow) {
+  if (refolow) {
     e.style.display = 'none';//隐藏e这个元素，其所占空间也消失
   }
   else {
@@ -71,22 +71,22 @@ function hide(e, refolow) {
 
 //通过设置CSS类高亮显示e元素
 function hightLight(e) {
-  if(!e.className) e.className = 'hilite';
+  if (!e.className) e.className = 'hilite';
   else e.className += 'hilite';
 }
 
-window.onload =  function() {
+window.onload = function () {
   var buttons = document.getElementsByTagName('button');//找到所有的<button>标签
 
-  for(var i =0; i < buttons.length; ++i) {
+  for (var i = 0; i < buttons.length; ++i) {
     // buttons[i].onclick =function () {alert('按钮点击事件被处理');}
-    if(buttons[i].addEventListener) buttons[i].addEventListener('click'
-    ,function(){alert('事件监听器被出发');}
-    ,true);
-    else buttons[i].attachEvent('click', function(){alert('事件监听器发');})
+    if (buttons[i].addEventListener) buttons[i].addEventListener('click'
+      , function () { alert('事件监听器被出发'); }
+      , true);
+    else buttons[i].attachEvent('click', function () { alert('事件监听器发'); })
   }
 }
 
-var a =[1];
+var a = [1];
 a[2] = 3;
-console.log(a[1])
+console.log(a[0], a[1], a[2])
